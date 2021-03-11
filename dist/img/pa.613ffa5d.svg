@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","height":"512","width":"512"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('defs',[_c('clipPath',{attrs:{"id":"a"}},[_c('path',{attrs:{"fill-opacity":".67","d":"M0 0h512v512H0z"}})])]),_c('g',{attrs:{"fill-rule":"evenodd","clip-path":"url(#a)"}},[_c('path',{attrs:{"fill":"#fff","d":"M-26.003-24.954h592.45v595.94h-592.45z"}}),_c('path',{attrs:{"fill":"#db0000","d":"M255.34-20.417h312.09v275.22H255.34z"}}),_c('path',{attrs:{"fill":"#0000ab","d":"M-54.446 254.81h309.82v316.17h-309.82zm233.426-73.22l-46.477-29.211-46.249 29.498 17.201-47.936-46.164-29.6 57.113-.413 17.715-47.79 18.094 47.68 57.113.063-45.927 29.88 17.581 47.83z"}}),_c('path',{attrs:{"d":"M435.24 449.04l-46.477-29.211-46.249 29.498 17.201-47.936-46.164-29.6 57.113-.413 17.715-47.79 18.094 47.68 57.113.063-45.927 29.88 17.581 47.83z","fill":"#d80000"}})])])
+          )
+        }
+      }
+    

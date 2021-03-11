@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","height":"512","width":"512"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('rect',{attrs:{"y":"170.667","width":"512","height":"170.667","ry":"0","rx":"0","fill":"#fff","fill-rule":"evenodd"}}),_c('rect',{attrs:{"y":"341.333","width":"512","height":"170.667","ry":"0","rx":"0","fill-rule":"evenodd"}}),_c('path',{attrs:{"d":"M0 0h512v170.667H0z","fill":"red","fill-rule":"evenodd"}}),_c('path',{attrs:{"d":"M151.36 299.73l-30.743-22.258-30.592 22.476 11.378-36.525-30.536-22.554 37.779-.314 11.718-36.414 11.969 36.33 37.779.047-30.38 22.767 11.629 36.444zm285.48 0l-30.743-22.258-30.592 22.476 11.378-36.525-30.536-22.554 37.779-.314 11.718-36.414 11.969 36.33 37.779.047-30.38 22.767 11.629 36.444z","fill":"#090","fill-rule":"evenodd"}})])
+          )
+        }
+      }
+    

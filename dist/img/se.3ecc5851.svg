@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","height":"512","width":"512"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('defs',[_c('clipPath',{attrs:{"id":"a"}},[_c('path',{attrs:{"fill-opacity":".67","d":"M118.97 7.306H609.7v490.73H118.97z"}})])]),_c('g',{attrs:{"clip-path":"url(#a)","transform":"translate(-124.12 -7.622) scale(1.0433)"}},[_c('g',{attrs:{"fill-rule":"evenodd","stroke-width":"1pt"}},[_c('path',{attrs:{"fill":"#006aa7","d":"M2.904 7.598h245.368v196.294H2.904zm0 294.132h245.368v196.295H2.904z"}}),_c('path',{attrs:{"fill":"#fecc00","d":"M2.904 203.78h245.368v98.147H2.904z"}}),_c('path',{attrs:{"fill":"#fecc00","d":"M247.262 7.318h98.147v490.735h-98.147z"}}),_c('path',{attrs:{"fill":"#fecc00","d":"M342.296 203.808h441.662v98.147H342.296z"}}),_c('path',{attrs:{"fill":"#006aa7","d":"M345.325 301.759h441.661v196.294H345.325zm0-294.161h441.661v196.294H345.325z"}})])])])
+          )
+        }
+      }
+    

@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink","height":"512","width":"512"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('defs',[_c('g',{attrs:{"id":"d","transform":"translate(0 -36)"}},[_c('g',{attrs:{"id":"c"}},[_c('g',{attrs:{"id":"b"}},[_c('path',{attrs:{"d":"M0-5L-1.545-.245l2.853.927z","id":"a","fill":"#fff"}}),_c('use',{attrs:{"xlink:href":"#a","transform":"scale(-1 1)","width":"180","height":"120"}})]),_c('use',{attrs:{"xlink:href":"#b","transform":"rotate(72)","width":"180","height":"120"}})]),_c('use',{attrs:{"xlink:href":"#b","transform":"rotate(-72)","width":"180","height":"120"}}),_c('use',{attrs:{"xlink:href":"#c","transform":"rotate(144)","width":"180","height":"120"}})])]),_c('path',{attrs:{"d":"M0 0h512v512H0z","fill":"#cf142b"}}),_c('path',{attrs:{"d":"M0 0h512v341.335H0z","fill":"#00247d"}}),_c('path',{attrs:{"d":"M0 0h512v170.665H0z","fill":"#fc0"}}),_c('g',{attrs:{"id":"f","transform":"translate(256.335 358.4) scale(4.265)"}},[_c('g',{attrs:{"id":"e"}},[_c('use',{attrs:{"height":"120","width":"180","transform":"rotate(10)","xlink:href":"#d"}}),_c('use',{attrs:{"height":"120","width":"180","transform":"rotate(30)","xlink:href":"#d"}})]),_c('use',{attrs:{"height":"120","width":"180","transform":"rotate(40)","xlink:href":"#e"}})]),_c('use',{attrs:{"height":"120","width":"180","transform":"rotate(-80 256.335 358.4)","xlink:href":"#f"}})])
+          )
+        }
+      }
+    

@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","height":"512","width":"512"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('defs',[_c('clipPath',{attrs:{"id":"a"}},[_c('path',{attrs:{"fill-opacity":".67","d":"M177.17 0h708.66v708.66H177.17z"}})])]),_c('g',{attrs:{"clip-path":"url(#a)","fill-rule":"evenodd","transform":"translate(-128) scale(.72249)"}},[_c('path',{attrs:{"fill":"#40a6ff","d":"M0 0h1063v708.66H0z"}}),_c('path',{attrs:{"d":"M642.937 527.641L528.74 453.625l-113.637 74.743 42.264-121.461-113.428-75.002 140.332-1.046 43.526-121.093 44.458 120.814 140.332.16-112.847 75.709 43.197 121.192z","fill":"#fff"}})])])
+          )
+        }
+      }
+    

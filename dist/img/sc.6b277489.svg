@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","height":"480","width":"640"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('defs',[_c('clipPath',{attrs:{"id":"a"}},[_c('path',{attrs:{"fill-opacity":".67","d":"M0 0h682.67v512H0z"}})])]),_c('g',{attrs:{"fill-rule":"evenodd","clip-path":"url(#a)","transform":"scale(.9375)","stroke-width":"1pt"}},[_c('path',{attrs:{"fill":"red","d":"M0 0h992.13v512H0z"}}),_c('path',{attrs:{"d":"M0 512l992.12-170.67V512H0z","fill":"#090"}}),_c('path',{attrs:{"d":"M0 512l992.12-341.33v170.67L0 512z","fill":"#fff"}}),_c('path',{attrs:{"d":"M0 512V0h330.71L0 512z","fill":"#009"}}),_c('path',{attrs:{"d":"M0 512L330.71 0h330.71L0 512z","fill":"#ff0"}})])])
+          )
+        }
+      }
+    

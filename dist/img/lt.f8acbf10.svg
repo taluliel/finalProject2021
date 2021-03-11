@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","height":"480","width":"640"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('g',{attrs:{"fill-rule":"evenodd","transform":"scale(.64143 .96773)","stroke-width":"1pt"}},[_c('rect',{attrs:{"transform":"scale(.93865 .69686)","rx":"0","ry":"0","width":"1063","height":"708.66","fill":"#007308"}}),_c('rect',{attrs:{"transform":"scale(.93865 .69686)","rx":"0","ry":"0","width":"1063","y":"475.56","height":"236.22","fill":"#bf0000"}}),_c('path',{attrs:{"fill":"#ffb300","d":"M0 0h997.77v164.61H0z"}})])])
+          )
+        }
+      }
+    

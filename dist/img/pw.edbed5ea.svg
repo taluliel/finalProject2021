@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","height":"512","width":"512"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('defs',[_c('clipPath',{attrs:{"id":"a"}},[_c('path',{attrs:{"fill-opacity":".67","d":"M61.722 4.181h170.82v170.82H61.722z"}})])]),_c('g',{attrs:{"fill-rule":"evenodd","clip-path":"url(#a)","transform":"translate(-185 -12.531) scale(2.9973)","stroke-width":"1pt"}},[_c('path',{attrs:{"fill":"#4aadd6","d":"M0 4.18h301.178V175H0z"}}),_c('path',{attrs:{"d":"M185.863 86.783c0 28.059-23.754 50.805-53.056 50.805-29.302 0-53.055-22.747-53.055-50.805 0-28.06 23.754-50.805 53.055-50.805 29.302 0 53.056 22.746 53.056 50.805z","fill":"#ffde00"}})])])
+          )
+        }
+      }
+    

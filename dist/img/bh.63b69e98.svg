@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","height":"512","width":"512"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('defs',[_c('clipPath',{attrs:{"id":"a"}},[_c('path',{attrs:{"fill":"gray","d":"M119.03-196.66h708.66V512H119.03z"}})])]),_c('g',{attrs:{"fill-rule":"evenodd","clip-path":"url(#a)","transform":"translate(-86 142.09) scale(.7225)","stroke-width":"1pt"}},[_c('path',{attrs:{"fill":"#e10011","d":"M0-196.66h1063V512H0z"}}),_c('path',{attrs:{"d":"M216.66 511.66L0 512v-708.66l215.64.113 139.14 44.743-138.12 43.614 138.12 44.968-138.12 43.615L354.78 25.36 216.66 68.976l138.12 44.968-138.12 43.615 138.12 44.97-138.12 43.613 138.12 44.97-138.12 43.614 138.12 44.968-138.12 43.615 138.12 44.968-138.12 43.615","fill":"#fff"}})])])
+          )
+        }
+      }
+    

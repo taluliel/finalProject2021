@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","height":"512","width":"512"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('g',{attrs:{"fill-rule":"evenodd","stroke-width":"1pt"}},[_c('path',{attrs:{"fill":"#f4f100","d":"M0 0h510.375v512H.001z"}}),_c('path',{attrs:{"fill":"#199a00","d":"M385.619 0h126.378v512H385.619z"}}),_c('path',{attrs:{"fill":"#0058aa","d":"M0 0h126.378v512H.001z"}})]),_c('path',{attrs:{"d":"M191.209 138.61l-49.471 76.148 47.733 79.35 46.743-78.648-45.005-76.85zm129.366 0l-49.471 76.148 47.733 79.35 46.736-78.648-44.998-76.85zm-65.337 103.882l-49.467 76.148 47.73 79.351 46.741-78.648-45.004-76.85z","fill-rule":"evenodd","fill":"#199a00"}})])
+          )
+        }
+      }
+    

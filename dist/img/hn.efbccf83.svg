@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink","height":"512","width":"512"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('path',{attrs:{"d":"M0 0h512v512H0z","fill":"#0073cf"}}),_c('path',{attrs:{"d":"M0 170.666h512v170.667H0z","fill":"#fff"}}),_c('g',{attrs:{"id":"c","transform":"translate(256 256) scale(28.44446)","fill":"#0073cf"}},[_c('g',{attrs:{"id":"b"}},[_c('path',{attrs:{"id":"a","d":"M0-1l-.31.95.477.156z"}}),_c('use',{attrs:{"height":"100%","width":"100%","xlink:href":"#a","transform":"scale(-1 1)"}})]),_c('use',{attrs:{"height":"100%","width":"100%","xlink:href":"#b","transform":"rotate(72)"}}),_c('use',{attrs:{"height":"100%","width":"100%","xlink:href":"#b","transform":"rotate(-72)"}}),_c('use',{attrs:{"height":"100%","width":"100%","xlink:href":"#b","transform":"rotate(144)"}}),_c('use',{attrs:{"height":"100%","width":"100%","xlink:href":"#b","transform":"rotate(-144)"}})]),_c('use',{attrs:{"height":"100%","width":"100%","xlink:href":"#c","transform":"translate(142.223 -45.511)"}}),_c('use',{attrs:{"height":"100%","width":"100%","xlink:href":"#c","transform":"translate(142.223 39.822)"}}),_c('use',{attrs:{"height":"100%","width":"100%","xlink:href":"#c","transform":"translate(-142.223 -45.511)"}}),_c('use',{attrs:{"height":"100%","width":"100%","xlink:href":"#c","transform":"translate(-142.223 39.822)"}})])
+          )
+        }
+      }
+    

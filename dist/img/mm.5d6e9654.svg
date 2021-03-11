@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"xmlns":"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink","height":"512","width":"512"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('defs',[_c('path',{attrs:{"id":"a","transform":"scale(8.844)","fill":"#fff","d":"M.162 0h-.324L0-.5z"}}),_c('g',{attrs:{"id":"b"}},[_c('use',{attrs:{"xlink:href":"#a","transform":"rotate(-144)","width":"18","height":"12"}}),_c('use',{attrs:{"xlink:href":"#a","transform":"rotate(-72)","width":"18","height":"12"}}),_c('use',{attrs:{"xlink:href":"#a","width":"18","height":"12"}}),_c('use',{attrs:{"xlink:href":"#a","transform":"rotate(72)","width":"18","height":"12"}}),_c('use',{attrs:{"xlink:href":"#a","transform":"rotate(144)","width":"18","height":"12"}})])]),_c('path',{attrs:{"d":"M0 0h512v170.667H0z","fill":"#fecb00"}}),_c('path',{attrs:{"d":"M0 341.333h512V512H0z","fill":"#ea2839"}}),_c('path',{attrs:{"d":"M0 170.667h512v170.666H0z","fill":"#34b233"}}),_c('use',{attrs:{"xlink:href":"#b","x":"9","y":"6.422","width":"18","height":"12","transform":"translate(-127.659) scale(42.66667)"}})])
+          )
+        }
+      }
+    

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "hechtmuseum-2021"
+  },
+  "targets": {
+    "hechtmuseum-2021": {
+      "hosting": {
+        "hecht": [
+          "hechtmuseum"
+        ]
+      }
+    }
+  }
+}
